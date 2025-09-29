@@ -1,0 +1,144 @@
+@use "abstractor/" as *;
+
+#Page {
+    .container {
+        color: #fff;
+        > h6 {
+            background-color: rgb(51, 42, 51);
+            width: fit-content;
+            margin: auto;
+            padding: 10px;
+            border-radius: 50px;
+        }
+        > h1 {
+        }
+        > p {
+            color: #888888;
+        }
+        .data {
+            .tolls-search {
+                .searchText {
+                    > h4 {
+                        width: fit-content;
+                        color: #cdaa35;
+                        border-radius: 10px;
+                    }
+                }
+                // background-color: rgba(178, 159, 155, 0.133);
+            }
+            .content-search {
+                .row {
+                    .spacial-card {
+                        .item {
+                            height: 450px;
+                            background-color: #383838fa;
+                            border-radius: 15px;
+                            overflow: hidden;
+                            border: 1px solid $mainColor;
+                            margin: auto;
+                            @include respond(350) {
+                                max-width: 300px;
+                            }
+                            @include respond(450) {
+                                max-width: 350px;
+                            }
+
+                            .header {
+                                width: 100%;
+                                height: 200px;
+                                background-position: center;
+                                background-repeat: no-repeat;
+                                background-size: cover;
+                            }
+                            .body {
+                                padding: 20px 15px;
+                                position: relative;
+                                h6 {
+                                    position: absolute;
+                                    width: 75%;
+                                    overflow: hidden;
+                                    top: -12%;
+                                    left: 3%;
+                                    font-size: 14px;
+                                    background-color: #000;
+                                    color: $mainColor;
+                                    padding: 10px;
+                                    border-radius: 5px;
+                                    border: 2px solid $mainColor;
+                                    span{
+                                        width: min-content;
+                                    }
+                                }
+                                h5 {
+                                    margin-top: 8px;
+                                    font-size: 17px;
+                                    color: #d0d0d0;
+                                }
+                                p {
+                                    margin-block: 20px;
+                                    font-size: 14px;
+                                    color: #888888;
+                                }
+                                ol{
+                                    padding: 0;
+                                    list-style: none;
+                                    color: #888888;
+                                    
+                                    li{
+                                        font-weight: 400;
+                                        color: #888888;
+                                        &::marker{
+                                            display: none;
+                                        }
+                                }
+                                }
+                                a {
+                                    text-decoration: none;
+                                    background-color: $mainColor;
+                                    color: #000;
+                                    border-radius: 5px;
+                                    padding: 5px 10px;
+                                    font-weight: 600;
+                                    border: 2px solid #000;
+                                    transition-duration: 0.5s;
+                                    &:hover {
+                                        background-color: #000;
+                                        color: $mainColor;
+                                        border-color: $mainColor;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .indicators {
+                overflow: auto;
+                ul{
+                    padding: 10px;
+                    width: max-content;
+                    margin: auto;
+                    li{
+                        background-color: #000;
+                        border: 3px solid $mainColor;
+                        color: $mainColor;
+                        width: 45px;
+                        height: 45px;
+                        @include flex;
+                        font-weight: 700;
+                        border-radius: 10px;
+                        cursor: pointer;
+                        transition-duration: .3s;
+                        &.active,
+                        &:hover{
+                            background-color: $mainColor;
+                            color: #000;
+                            border-color: #000;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

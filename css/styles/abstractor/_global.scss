@@ -1,0 +1,11 @@
+@use "mixins" as *;
+
+$mainColor: #cdaa35;
+
+body {
+    background-color: #121212;
+}
+
+.mainColor{
+    color: #cdaa35;
+}
