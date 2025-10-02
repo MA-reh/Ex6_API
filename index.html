@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="css/plugins/animate.min.css">
     <link rel="stylesheet" href="css/plugins/animated_headlin.css">
     <link rel="stylesheet" href="css/plugins/bootstrap.min.css">
-
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -18,13 +17,12 @@
 
     <div id="Page" class="py-5">
         <div class="container text-center">
-
-            <h6 class="mb-3 mainColor">Tech Trends</h6>
-            <h1 class="mb-3">Latest News in Tech and Finance</h1>
-            <p class="mb-5 mx-auto">Discover the latest news about Tesla, Bitcoin, and global markets, offering
-                daily insights, breaking stories, and future technology trends.</p>
-
-
+            <div class="header">
+                <h6 class="mb-3 mainColor">Tech Trends</h6>
+                <h1 class="mb-3">Latest News in Tech and Finance</h1>
+                <p class="mb-5 mx-auto">Discover the latest news about Tesla, Bitcoin, and global markets, offering
+                    daily insights, breaking stories, and future technology trends.</p>
+            </div>
             <div class="data">
                 <div class="row">
                     <div class="col-lg-3 mb-4 mb-lg-0">
@@ -38,15 +36,17 @@
                                         <span class="input-group-text" id="basic-addon1">
                                             <i class="fa-solid fa-magnifying-glass mainColor"></i>
                                         </span>
-                                        <input type="search" class="form-control" placeholder="Search...">
+                                        <input type="search" class="form-control" id="searchInput"
+                                            placeholder="Search...">
                                     </div>
-                                    <label for="" class="text-start mb-3 fw-bold fs-5 mainColor d-block w-100">Select
+                                    <label class="text-start mb-3 fw-bold fs-5 mainColor d-block w-100">Select
                                         Category</label>
                                     <div class="input-group">
                                         <span class="input-group-text" id="basic-addon1">
                                             <i class="fa-solid fa-caret-down"></i>
                                         </span>
-                                        <select onchange="typeOfNews(this)" name="category" class="form-control" id="Categories">
+                                        <select onchange="typeOfNews(this.value)" id="typeNewsFilter" name="category"
+                                            class="form-control" id="Categories">
                                             <option value="tesla">Tesla</option>
                                             <option value="apple">Apple</option>
                                             <option value="sources">Sources</option>
@@ -61,12 +61,13 @@
                     <div class="col-lg-9">
                         <div class="item">
                             <div class="content-search mb-4">
+                                <h3 id="waring" class="d-none py-3 bg-danger rounded-4">No Data Find</h3>
                                 <div class="row">
-                                    
                                 </div>
                             </div>
                             <div class="indicators">
-                                <ul type="none" class="d-flex p-0 changeActives">
+                                <ul type="none" id="indicators" class="d-flex p-0 changeActives">
+
                                 </ul>
                             </div>
                         </div>

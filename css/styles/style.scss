@@ -65,7 +65,7 @@
                                     padding: 10px;
                                     border-radius: 5px;
                                     border: 2px solid $mainColor;
-                                    span{
+                                    span {
                                         width: min-content;
                                     }
                                 }
@@ -79,18 +79,18 @@
                                     font-size: 14px;
                                     color: #888888;
                                 }
-                                ol{
+                                ol {
                                     padding: 0;
                                     list-style: none;
                                     color: #888888;
-                                    
-                                    li{
+
+                                    li {
                                         font-weight: 400;
                                         color: #888888;
-                                        &::marker{
+                                        &::marker {
                                             display: none;
                                         }
-                                }
+                                    }
                                 }
                                 a {
                                     text-decoration: none;
@@ -115,11 +115,11 @@
 
             .indicators {
                 overflow: auto;
-                ul{
+                ul {
                     padding: 10px;
                     width: max-content;
                     margin: auto;
-                    li{
+                    li {
                         background-color: #000;
                         border: 3px solid $mainColor;
                         color: $mainColor;
@@ -129,9 +129,9 @@
                         font-weight: 700;
                         border-radius: 10px;
                         cursor: pointer;
-                        transition-duration: .3s;
+                        transition-duration: 0.3s;
                         &.active,
-                        &:hover{
+                        &:hover {
                             background-color: $mainColor;
                             color: #000;
                             border-color: #000;
