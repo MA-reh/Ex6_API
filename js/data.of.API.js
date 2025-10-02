@@ -14,7 +14,8 @@ fetch(
     ArrayOfData = categoryTesla
     NumberAllObjInArray = data.articles.length;
   })
-  .then(() => {
+  .then((response) => {
+
     (function () {
       rowNews.innerHTML += ``;
       updateIndicatorsContent();
@@ -25,7 +26,7 @@ fetch(
                 <div class="spacial-card mb-4 col-md-6 col-xl-4">
                     <div class="item" data-id="${itemIndex}">
                         <div class="header"
-                            style="background-image: url('${data.urlToImage}');">
+                            style="background-image: url('${data.urlToImage?? "https://media.zenfs.com/en/us.finance.gurufocus/a5db098f439fc5abd74f34f4f0e39448"}');">
                         </div>
                         <div class="body text-start">
                             <h6 class="NameUser">${data.source.id ?? data.source.name ?? "unknown"}</h6>
@@ -97,7 +98,6 @@ fetch(
 )
   .then((response) => response.json())
   .then(function (data) {
-    console.log(data);
     categorySource = data.articles;
   })
   .catch((Error) => {

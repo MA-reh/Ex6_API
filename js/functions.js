@@ -10,7 +10,6 @@ function createIndicatorsContent() {
         `
     }
 
-    console.log(HtmlContent);
     return HtmlContent;
 }
 function updateIndicatorsContent() {
