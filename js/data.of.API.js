@@ -5,7 +5,7 @@ var categoryDomains;
 var categoryCountry;
 
 fetch(
-  "https://newsapi.org/v2/everything?q=tesla&from=2025-09-02&sortBy=publishedAt&apiKey=49878c3f53a943c28b30ba4476d1d610"
+  "https://newsapi.org/v2/everything?q=tesla&from=2025-09-24&sortBy=publishedAt&apiKey=0a41a4f5b2174e4ea14efdebefdcbb6e"
 )
   .then((response) => response.json())
   .then(function (data) {
@@ -83,7 +83,7 @@ fetch(
   });
 
 fetch(
-  "https://newsapi.org/v2/everything?q=apple&from=2025-10-01&to=2025-10-01&sortBy=popularity&apiKey=49878c3f53a943c28b30ba4476d1d610"
+  "https://newsapi.org/v2/everything?q=apple&from=2025-10-23&to=2025-10-23&sortBy=popularity&apiKey=0a41a4f5b2174e4ea14efdebefdcbb6e"
 )
   .then((response) => response.json())
   .then(function (data) {
@@ -94,7 +94,7 @@ fetch(
   });
 
 fetch(
-  "https://newsapi.org/v2/top-headlines?sources=techcrunch&apiKey=49878c3f53a943c28b30ba4476d1d610"
+  "https://newsapi.org/v2/top-headlines?sources=techcrunch&apiKey=0a41a4f5b2174e4ea14efdebefdcbb6e"
 )
   .then((response) => response.json())
   .then(function (data) {
@@ -105,7 +105,7 @@ fetch(
   });
 
 fetch(
-  "https://newsapi.org/v2/everything?domains=wsj.com&apiKey=49878c3f53a943c28b30ba4476d1d610"
+  "https://newsapi.org/v2/everything?domains=wsj.com&apiKey=0a41a4f5b2174e4ea14efdebefdcbb6e"
 )
   .then((response) => response.json())
   .then(function (data) {
@@ -116,7 +116,7 @@ fetch(
   });
 
 fetch(
-  "https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=49878c3f53a943c28b30ba4476d1d610"
+  "https://newsapi.org/v2/everything?q=tesla&from=2025-09-24&sortBy=publishedAt&apiKey=0a41a4f5b2174e4ea14efdebefdcbb6e"
 )
   .then((response) => response.json())
   .then(function (data) {
